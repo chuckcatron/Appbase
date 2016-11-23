@@ -24,12 +24,39 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="scripts\lib\jquery.min.js" />
+    <Content Include="scripts\lib\kendo.all.min.js" />
+    <Content Include="scripts\lib\toastr.min.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="scripts\loaderModel.ts" />
+    <TypeScriptCompile Include="scripts\data.ts" />
+    <TypeScriptCompile Include="scripts\greeter.ts" />
+    <TypeScriptCompile Include="scripts\Models\category.ts" />
+    <TypeScriptCompile Include="scripts\Models\contact.ts" />
+    <TypeScriptCompile Include="scripts\Models\customer.ts" />
+    <TypeScriptCompile Include="scripts\Models\customerCustomerDemo.ts" />
+    <TypeScriptCompile Include="scripts\Models\customerDemographics.ts" />
+    <TypeScriptCompile Include="scripts\Models\employee.ts" />
+    <TypeScriptCompile Include="scripts\Models\employeeTerritory.ts" />
+    <TypeScriptCompile Include="scripts\Models\order.ts" />
+    <TypeScriptCompile Include="scripts\Models\orderDetail.ts" />
+    <TypeScriptCompile Include="scripts\Models\product.ts" />
+    <TypeScriptCompile Include="scripts\Models\region.ts" />
+    <TypeScriptCompile Include="scripts\Models\shipper.ts" />
+    <TypeScriptCompile Include="scripts\Models\supplier.ts" />
+    <TypeScriptCompile Include="scripts\Observables\product.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\kendo-ui\kendo-ui.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\toastr\toastr.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="scripts\lib\jquery.min.map" />
+    <Content Include="scripts\lib\kendo.all.min.js.map" />
+    <Content Include="scripts\lib\toastr.min.js.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -37,6 +64,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
@@ -66,6 +94,17 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir>C:\Development\Typescript\AppBase\AppBase\</TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot>C:\Development\Typescript\AppBase\AppBase\scripts</TypeScriptMapRoot>
+    <TypeScriptSourceRoot>C:\Development\Typescript\AppBase\AppBase\scripts</TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
