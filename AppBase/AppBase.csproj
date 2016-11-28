@@ -24,13 +24,29 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\data.js" />
+    <Content Include="scripts\greeter.js" />
     <Content Include="scripts\lib\jquery.min.js" />
     <Content Include="scripts\lib\kendo.all.min.js" />
     <Content Include="scripts\lib\toastr.min.js" />
+    <Content Include="scripts\loaderModel.js" />
+    <Content Include="scripts\scripts\data.js" />
+    <Content Include="scripts\scripts\greeter.js" />
+    <Content Include="scripts\scripts\loaderModel.js" />
+    <Content Include="scripts\scripts\Models\product.js" />
+    <Content Include="scripts\scripts\Observables\product.js" />
+    <Content Include="scripts\scripts\Observables\productObservable.js" />
+    <Content Include="scripts\scripts\typings\greeter.js" />
+    <Content Include="scripts\Utilities\common.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="scripts\app.d.ts" />
+    <TypeScriptCompile Include="scripts\data.d.ts" />
+    <TypeScriptCompile Include="scripts\greeter.d.ts" />
+    <TypeScriptCompile Include="scripts\loaderModel.d.ts" />
     <TypeScriptCompile Include="scripts\Models\common.ts" />
     <TypeScriptCompile Include="scripts\Models\loader.ts" />
     <TypeScriptCompile Include="scripts\data.ts" />
@@ -59,15 +75,36 @@
     <TypeScriptCompile Include="scripts\Observables\shipper.ts" />
     <TypeScriptCompile Include="scripts\Observables\supplier.ts" />
     <TypeScriptCompile Include="scripts\Observables\user.ts" />
+    <TypeScriptCompile Include="scripts\scripts\data.d.ts" />
+    <TypeScriptCompile Include="scripts\scripts\greeter.d.ts" />
+    <TypeScriptCompile Include="scripts\scripts\loaderModel.d.ts" />
+    <TypeScriptCompile Include="scripts\scripts\Models\product.d.ts" />
+    <TypeScriptCompile Include="scripts\scripts\Observables\product.d.ts" />
+    <TypeScriptCompile Include="scripts\scripts\Observables\productObservable.d.ts" />
+    <TypeScriptCompile Include="scripts\scripts\typings\greeter.d.ts" />
     <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="scripts\typings\kendo-ui\kendo-ui.d.ts" />
     <TypeScriptCompile Include="scripts\typings\toastr\toastr.d.ts" />
+    <TypeScriptCompile Include="scripts\Utilities\common.d.ts" />
+    <TypeScriptCompile Include="scripts\Utilities\common.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="scripts\lib\jquery.min.map" />
     <Content Include="scripts\lib\kendo.all.min.js.map" />
     <Content Include="scripts\lib\toastr.min.js.map" />
+    <Content Include="scripts\scripts\data.js.map" />
+    <Content Include="scripts\scripts\greeter.js.map" />
+    <Content Include="scripts\scripts\loaderModel.js.map" />
+    <Content Include="scripts\scripts\Models\product.js.map" />
+    <Content Include="scripts\scripts\Observables\product.js.map" />
+    <Content Include="scripts\scripts\Observables\productObservable.js.map" />
+    <Content Include="scripts\scripts\typings\greeter.js.map" />
+    <Content Include="scripts\loaderModel.js.map" />
+    <Content Include="scripts\app.js.map" />
+    <Content Include="scripts\data.js.map" />
+    <Content Include="scripts\greeter.js.map" />
+    <Content Include="scripts\Utilities\common.js.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
