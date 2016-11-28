@@ -16,4 +16,4 @@ var Region = (function (_super) {
     }
     return Region;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/region.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/region.js.map

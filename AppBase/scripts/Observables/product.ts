@@ -1,16 +1,22 @@
 ﻿///<reference path="../typings/kendo-ui/kendo-ui.d.ts"/>
 
-class product extends kendo.Observable{
-    appData = new Data();
-    load() {
+class product extends kendo.data.ObservableObject{
+    application = new application();
+    main: main = this.application.main;
+    Product: Product = this.application.main.product.Product;
+
+    load = () => {
+        var self = this;
         var d = $.Deferred();
-        this.appData.productDataSource.read().then(() => {
+        self.main.productDS.read().then(() => {
             d.resolve("products");
         });
         return d.promise();
     }
-    fetch(productId) {
-        return this.appData.productDataSource.get(productId);
+
+    fetch = (productId) => {
+        var self = this;
+        return self.main.productDS.get(productId);
     }
 
     constructor() {

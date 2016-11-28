@@ -2,4 +2,5 @@
 declare class Shipper extends kendo.data.Model {
     constructor(data?: any);
     fill: () => this;
+    pack: () => Object;
 }

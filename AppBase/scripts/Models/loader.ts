@@ -1,5 +1,5 @@
-﻿/// <reference path="typings/kendo-ui/kendo-ui.d.ts" />
-/// <reference path="typings/jquery/jquery.d.ts" />
+﻿/// <reference path="../typings/kendo-ui/kendo-ui.d.ts" />
+/// <reference path="../typings/jquery/jquery.d.ts" />
 
 class Loader extends kendo.data.ObservableObject {
     docHeight;

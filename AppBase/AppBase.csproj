@@ -31,7 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="scripts\loaderModel.ts" />
+    <TypeScriptCompile Include="scripts\Models\common.ts" />
+    <TypeScriptCompile Include="scripts\Models\loader.ts" />
     <TypeScriptCompile Include="scripts\data.ts" />
     <TypeScriptCompile Include="scripts\greeter.ts" />
     <TypeScriptCompile Include="scripts\Models\category.ts" />
@@ -47,7 +48,17 @@
     <TypeScriptCompile Include="scripts\Models\region.ts" />
     <TypeScriptCompile Include="scripts\Models\shipper.ts" />
     <TypeScriptCompile Include="scripts\Models\supplier.ts" />
+    <TypeScriptCompile Include="scripts\Models\user.ts" />
+    <TypeScriptCompile Include="scripts\Observables\application.ts" />
+    <TypeScriptCompile Include="scripts\Observables\category.ts" />
+    <TypeScriptCompile Include="scripts\Observables\contact.ts" />
+    <TypeScriptCompile Include="scripts\Observables\gridloader.ts" />
+    <TypeScriptCompile Include="scripts\Observables\main.ts" />
+    <TypeScriptCompile Include="scripts\Observables\order.ts" />
     <TypeScriptCompile Include="scripts\Observables\product.ts" />
+    <TypeScriptCompile Include="scripts\Observables\shipper.ts" />
+    <TypeScriptCompile Include="scripts\Observables\supplier.ts" />
+    <TypeScriptCompile Include="scripts\Observables\user.ts" />
     <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="scripts\typings\kendo-ui\kendo-ui.d.ts" />
     <TypeScriptCompile Include="scripts\typings\toastr\toastr.d.ts" />
@@ -100,11 +111,11 @@
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
     <TypeScriptOutFile />
-    <TypeScriptOutDir>C:\Development\Typescript\AppBase\AppBase\</TypeScriptOutDir>
+    <TypeScriptOutDir>C:\Users\charl\Source\Repos\Appbase\AppBase</TypeScriptOutDir>
     <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
     <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
-    <TypeScriptMapRoot>C:\Development\Typescript\AppBase\AppBase\scripts</TypeScriptMapRoot>
-    <TypeScriptSourceRoot>C:\Development\Typescript\AppBase\AppBase\scripts</TypeScriptSourceRoot>
+    <TypeScriptMapRoot>C:\Users\charl\Source\Repos\Appbase\AppBase\scripts</TypeScriptMapRoot>
+    <TypeScriptSourceRoot>C:\Users\charl\Source\Repos\Appbase\AppBase\scripts</TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>

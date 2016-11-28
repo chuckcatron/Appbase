@@ -13,7 +13,4 @@ declare class Data {
     shipperDataSource: kendo.data.DataSource;
     shipperListDataSource: kendo.data.DataSource;
     constructor();
-    loadSingleOrder: (orderid: any) => JQueryPromise<{}>;
-    saveOrder: (o: any) => JQueryPromise<{}>;
-    deleteOrder: (o: any) => JQueryPromise<{}>;
 }

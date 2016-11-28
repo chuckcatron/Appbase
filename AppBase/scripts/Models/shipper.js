@@ -18,6 +18,15 @@ var Shipper = (function (_super) {
                 throw err;
             }
         };
+        this.pack = function () {
+            try {
+                var self = _this;
+                return self.toJSON();
+            }
+            catch (err) {
+                throw err;
+            }
+        };
         this.idField = "ShipperID";
         this.fields = {
             "CompanyName": { type: "string" },
@@ -27,4 +36,4 @@ var Shipper = (function (_super) {
     }
     return Shipper;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/shipper.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/shipper.js.map

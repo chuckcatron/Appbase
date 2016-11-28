@@ -29,4 +29,4 @@ var Contact = (function (_super) {
     }
     return Contact;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/contact.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/contact.js.map

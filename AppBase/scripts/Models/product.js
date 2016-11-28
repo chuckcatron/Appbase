@@ -24,4 +24,4 @@ var Product = (function (_super) {
     }
     return Product;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/product.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/product.js.map

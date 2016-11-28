@@ -16,4 +16,4 @@ var CustomerDemographics = (function (_super) {
     }
     return CustomerDemographics;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/customerDemographics.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/customerDemographics.js.map

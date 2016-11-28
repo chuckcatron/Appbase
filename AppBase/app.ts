@@ -9,8 +9,6 @@ $(() => {
     var el = document.getElementById('content');
     var greeter = new Greeter(el);
     greeter.start();
-
-
 });
 
 class Main extends kendo.Observable {

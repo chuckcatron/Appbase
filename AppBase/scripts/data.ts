@@ -1,6 +1,5 @@
 ﻿///<reference path="typings/kendo-ui/kendo-ui.d.ts"/>
 ///<reference path="typings/toastr/toastr.d.ts"/>
-
 class Data {
     total: number;
 
@@ -338,51 +337,4 @@ class Data {
             }
         });
     }
-
-    loadSingleOrder = orderid => {
-        var d = $.Deferred();
-        $.ajax("api/order/" + orderid)
-            .done(result => {
-                d.resolve(result.order);
-            })
-            .fail(error => {
-                alert("error");
-            });
-        return d.promise();
-    }
-
-    saveOrder = o => {
-        var d = $.Deferred(), data = o;
-        $.ajax({
-                method: "PUT",
-                url: "api/order/update",
-                data: data
-            })
-            .done(() => {
-                toastr.success("Update complete");
-                d.resolve();
-            })
-            .fail(result => {
-                toastr.error("Order Update Error: " + result.statusText);
-                d.reject();
-            });
-        return d.promise();
-    };
-
-    deleteOrder = o => {
-        var d = $.Deferred();
-        $.ajax({
-                method: "PUT",
-                url: "api/order/remove/" + o
-            })
-            .done(() => {
-                toastr.success("Delete complete");
-                d.resolve();
-            })
-            .fail(result => {
-                toastr.error("Order Delete Error: " + result.statusText);
-                d.reject();
-            });
-        return d.promise();
-    };
 }

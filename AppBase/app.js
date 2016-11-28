@@ -32,4 +32,4 @@ var Main = (function (_super) {
     }
     return Main;
 }(kendo.Observable));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/app.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/app.js.map

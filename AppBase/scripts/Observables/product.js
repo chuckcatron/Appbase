@@ -7,20 +7,25 @@ var __extends = (this && this.__extends) || function (d, b) {
 var product = (function (_super) {
     __extends(product, _super);
     function product() {
+        var _this = this;
         _super.call(this);
-        this.appData = new Data();
+        this.application = new application();
+        this.main = this.application.main;
+        this.Product = this.application.main.product.Product;
+        this.load = function () {
+            var self = _this;
+            var d = $.Deferred();
+            self.main.productDS.read().then(function () {
+                d.resolve("products");
+            });
+            return d.promise();
+        };
+        this.fetch = function (productId) {
+            var self = _this;
+            return self.main.productDS.get(productId);
+        };
         _super.prototype.init.call(this, this);
     }
-    product.prototype.load = function () {
-        var d = $.Deferred();
-        this.appData.productDataSource.read().then(function () {
-            d.resolve("products");
-        });
-        return d.promise();
-    };
-    product.prototype.fetch = function (productId) {
-        return this.appData.productDataSource.get(productId);
-    };
     return product;
-}(kendo.Observable));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Observables/product.js.map
+}(kendo.data.ObservableObject));
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Observables/product.js.map

@@ -38,4 +38,4 @@ var Loader = (function (_super) {
     };
     return Loader;
 }(kendo.data.ObservableObject));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/loaderModel.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/loaderModel.js.map

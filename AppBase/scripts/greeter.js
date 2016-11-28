@@ -15,4 +15,4 @@ var Greeter = (function () {
     };
     return Greeter;
 }());
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/greeter.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/greeter.js.map

@@ -18,4 +18,13 @@ class Shipper extends kendo.data.Model {
             throw err;
         }
     }
+
+    pack = () => {
+        try {
+            var self = this;
+            return self.toJSON();
+        } catch (err) {
+            throw err;
+        }
+    }
 }

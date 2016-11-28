@@ -16,4 +16,4 @@ var CustomerCustomerDemo = (function (_super) {
     }
     return CustomerCustomerDemo;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/customerCustomerDemo.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/customerCustomerDemo.js.map

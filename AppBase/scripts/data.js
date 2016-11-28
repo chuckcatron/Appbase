@@ -3,50 +3,6 @@
 var Data = (function () {
     function Data() {
         var _this = this;
-        this.loadSingleOrder = function (orderid) {
-            var d = $.Deferred();
-            $.ajax("api/order/" + orderid)
-                .done(function (result) {
-                d.resolve(result.order);
-            })
-                .fail(function (error) {
-                alert("error");
-            });
-            return d.promise();
-        };
-        this.saveOrder = function (o) {
-            var d = $.Deferred(), data = o;
-            $.ajax({
-                method: "PUT",
-                url: "api/order/update",
-                data: data
-            })
-                .done(function () {
-                toastr.success("Update complete");
-                d.resolve();
-            })
-                .fail(function (result) {
-                toastr.error("Order Update Error: " + result.statusText);
-                d.reject();
-            });
-            return d.promise();
-        };
-        this.deleteOrder = function (o) {
-            var d = $.Deferred();
-            $.ajax({
-                method: "PUT",
-                url: "api/order/remove/" + o
-            })
-                .done(function () {
-                toastr.success("Delete complete");
-                d.resolve();
-            })
-                .fail(function (result) {
-                toastr.error("Order Delete Error: " + result.statusText);
-                d.reject();
-            });
-            return d.promise();
-        };
         this.productDataSource = new kendo.data.DataSource({
             transport: {
                 read: {
@@ -362,4 +318,4 @@ var Data = (function () {
     }
     return Data;
 }());
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/data.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/data.js.map

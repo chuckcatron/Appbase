@@ -19,4 +19,4 @@ var OrderDetail = (function (_super) {
     }
     return OrderDetail;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/orderDetail.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/orderDetail.js.map

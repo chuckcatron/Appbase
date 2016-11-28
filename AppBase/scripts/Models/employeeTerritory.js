@@ -15,4 +15,4 @@ var EmployeeTerritory = (function (_super) {
     }
     return EmployeeTerritory;
 }(kendo.data.Model));
-//# sourceMappingURL=C:/Development/Typescript/AppBase/AppBase/scripts/scripts/Models/employeeTerritory.js.map
+//# sourceMappingURL=C:/Users/charl/Source/Repos/Appbase/AppBase/scripts/scripts/Models/employeeTerritory.js.map
